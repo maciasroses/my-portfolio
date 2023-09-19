@@ -4,7 +4,12 @@ const translations = {
             home: "Home",
             about: "About",
             projects: "Projects",
-            contact: "Contact"
+            contact: "Contact",
+            language: "Spanish"
+        },
+        home: {
+            title: "Are you lucking for your future amazing website?",
+            button: "I am!"
         }
     },
     es: {
@@ -12,7 +17,12 @@ const translations = {
             home: "Inicio",
             about: "Acerca de",
             projects: "Projectos",
-            contact: "Contacto"
+            contact: "Contacto",
+            language: "Inglés"
+        },
+        home: {
+            title: "¿Estás en busca de tu próximo sitio web increíble?",
+            button: "¡Vamos!"
         }
     }
 }

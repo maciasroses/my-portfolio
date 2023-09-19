@@ -1,0 +1,26 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "language": "Spanish",
+        "locale": "es"
+    },
+    "Home": {
+        "title": "Are you looking for your next awesome website?",
+        "button": "I am"
+    },
+    "About": {
+        "title": "This is the about section"
+    },
+    "Projects": {
+        "title": "This is the projects section"
+    },
+    "Contact": {
+        "title": "This is the contact section"
+    },
+    "Footer": {
+        "title": "This is the footer"
+    }
+}
