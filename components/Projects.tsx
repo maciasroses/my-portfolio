@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { useState } from 'react';
+import projects from '@/constants/projects';
+import Link from 'next/link';
 
 const Projects = () => {
     const t = useTranslations('Projects')
@@ -14,7 +16,8 @@ const Projects = () => {
             <p>{t('title')}</p>
             <Carousel
                 className="rounded-xl"
-                loop={true}
+                loop
+                autoplay
                 navigation={({ setActiveIndex, activeIndex, length }) => (
                     <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                         {new Array(length).fill("").map((_, i) => (
@@ -52,22 +55,18 @@ const Projects = () => {
                     </IconButton>
                 )}
             >
-                <div className='relative w-full h-full flex justify-center items-center' onMouseEnter={() => setIsTextVisible(true)} onMouseLeave={() => setIsTextVisible(false)}>
-                    <Image src="/jlarchitecture.webp" alt="Project ilustration" width={1880} height={800} className={`${!isTextVisible && 'animate-pulse animate-ease-in animate-duration-[5000ms]'}`} />
-                    {isTextVisible && (
-                        <div className='w-full h-full absolute top-0 flex flex-col justify-end items-center bg-black/50 animate-fade' onClick={() => setIsTextVisible(false)}>
-                            <p className='z-20 text-xl md:text-2xl lg:text-4xl text-white p-10'>Description</p>
-                        </div>
-                    )}
-                </div>
-                <div className='relative w-full h-full flex justify-center items-center' onMouseEnter={() => setIsTextVisible(true)} onMouseLeave={() => setIsTextVisible(false)}>
-                    <Image src="/acompaniat.webp" alt="Project ilustration" width={2000} height={1000} className={`${!isTextVisible && 'animate-pulse animate-ease-in animate-duration-[5000ms]'}`} />
-                    {isTextVisible && (
-                        <div className='w-full h-full absolute top-0 flex flex-col justify-end items-center bg-black/50 animate-fade' onClick={() => setIsTextVisible(false)}>
-                            <p className='z-20 text-xl md:text-2xl lg:text-4xl text-white p-10'>Description</p>
-                        </div>
-                    )}
-                </div>
+                {projects.map(project => (
+                    <div key={project.id} className='relative w-full h-full flex justify-center items-center' onMouseEnter={() => setIsTextVisible(true)} onMouseLeave={() => setIsTextVisible(false)}>
+                        <Image src={project.img} alt="Project ilustration" width={1880} height={800} className={`${!isTextVisible && 'animate-pulse animate-ease-in animate-duration-[5000ms]'}`} priority />
+                        {isTextVisible && (
+                            <div className='w-full h-full overflow-y-scroll overflow-x-hidden py-5 px-20 lg:p-10 absolute top-0 flex flex-col justify-start lg:justify-end items-center bg-black/50 animate-fade' onClick={() => setIsTextVisible(false)}>
+                                <p className='z-20 text-xl md:text-2xl lg:text-4xl text-white'>{project.title}</p>
+                                <p className='z-20 text-base md:text-lg lg:text-2xl text-gray-300'>{t('lan') === 'en' ? project.description : project.description_es}</p>
+                                <Link href="/" className='z-20 rounded-xl px-4 py-1 text-white border border-black bg-black hover:border-white'>More</Link>
+                            </div>
+                        )}
+                    </div>
+                ))}
             </Carousel>
         </div>
     )

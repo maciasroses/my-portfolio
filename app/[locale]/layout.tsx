@@ -26,7 +26,7 @@ export default async function RootLayout({ children, params: { locale } }: { chi
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className='scroll-smooth'>
       <body className={`${hind.className} dark:bg-gray-800 dark:text-white`}>
         <NextIntlClientProvider locale={locale} messages={translations}>
           <Navbar />
