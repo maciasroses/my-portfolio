@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
+import { Provider } from "./Provider";
 import Contact from "./Contact";
 
 export {
@@ -11,5 +12,6 @@ export {
     Home,
     About,
     Projects,
+    Provider,
     Contact
 }
