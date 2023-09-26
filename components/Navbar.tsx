@@ -21,7 +21,7 @@ const Navbar = () => {
     }
 
     return (
-        <header className="z-50 w-full fixed backdrop-blur bg-white/80 drop-shadow-2xl dark:text-white dark:bg-gray-800/80">
+        <header className="z-40 w-full fixed backdrop-blur bg-white/80 drop-shadow-2xl dark:text-white dark:bg-gray-800/80">
             <nav className="max-w-[1440px] mx-auto flex justify-between items-center md:px-16 px-6 py-4 md:py-0">
                 <p>Jorge Humberto Macías Romero</p>
                 <div className="flex space-x-4 md:space-x-0">
