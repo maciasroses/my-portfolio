@@ -5,7 +5,7 @@ import { Hind } from "next/font/google"
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 
-const hind = Hind({ weight: "400", subsets: ["latin"] })
+const hind = Hind({ weight: "300", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: 'My Portfolio',
