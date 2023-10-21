@@ -27,7 +27,7 @@ export default async function RootLayout({ children, params: { locale } }: { chi
 
   return (
     <html lang={locale} className='scroll-smooth' suppressHydrationWarning>
-      <body className={`${hind.className} dark:bg-gray-800 dark:text-white`}>
+      <body className={`${hind.className} dark:bg-[#202124FF] dark:text-white`}>
         <NextIntlClientProvider locale={locale} messages={translations}>
           <Provider>
             <Navbar />
