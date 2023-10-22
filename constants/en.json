@@ -12,14 +12,21 @@
         "button": "I am"
     },
     "About": {
-        "title": "This is the about section"
+        "title": "Hey!, nice to meet you, I am a 21 years-old full stack developer.",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "button": "See my projects"
     },
     "Projects": {
         "lan": "en",
-        "title": "This is the projects section"
+        "title": "Did you like them?",
+        "button": "Contact me!"
     },
     "Contact": {
-        "title": "This is the contact section"
+        "title": "This is the contact section",
+        "name": "Name",
+        "email": "E-mail",
+        "message": "Message",
+        "button": "Send"
     },
     "Footer": {
         "title": "This is the footer"

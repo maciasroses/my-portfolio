@@ -6,6 +6,7 @@ import { Carousel, IconButton } from "@material-tailwind/react";
 import { useEffect, useState } from 'react';
 import projects from '@/constants/projects';
 import ProjectPopUp from './ProjectPopUp';
+import Link from 'next/link';
 
 const Projects = () => {
     const t = useTranslations('Projects')
@@ -29,7 +30,6 @@ const Projects = () => {
             {modal && (
                 <ProjectPopUp lan={t('lan')} project={projectSelected} onClick={() => SetModal(false)} />
             )}
-            <p>{t('title')}</p>
             <Carousel
                 className="rounded-xl"
                 loop
@@ -84,6 +84,15 @@ const Projects = () => {
                     </div>
                 ))}
             </Carousel>
+            <div className='flex flex-col gap-2'>
+                <p className='text-lg font-bold'>{t("title")}</p>
+                <Link href='#Contact' className='px-4 py-2 flex justify-between items-center text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-400 duration-300 ease-in-out'>
+                    {t('button')}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 animate-fade-right animate-infinite animate-duration-[2000ms] animate-alternate">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </Link>
+            </div>
         </div>
     )
 }
