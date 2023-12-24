@@ -16,7 +16,7 @@ export interface IProjectProps {
   link: string;
 }
 
-interface ICredentialsValues {
+export interface ICredentialsValues {
   serviceId?: string;
   templateId?: string;
   publicKey?: string;

@@ -2,10 +2,9 @@
 
 import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import { ICredentialsProps } from "../types";
 import { Alert } from "@material-tailwind/react";
-import type { color } from "../types";
+import type { ICredentialsProps, color } from "../types";
+import { sendEmail } from "../utils/sendEmail";
 
 const Contact = ({ credentials }: ICredentialsProps) => {
   const [open, setOpen] = useState(false);
@@ -17,33 +16,19 @@ const Contact = ({ credentials }: ICredentialsProps) => {
   const t = useTranslations("Contact");
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        credentials.serviceId!,
-        credentials.templateId!,
-        form.current!,
-        credentials.publicKey
-      )
-      .then(
-        (result) => {
-          // console.log(result.text);
-          setMessage(t("successEmail"));
-          setSecondMessage(t("secondSuccessEmail"));
-          setColor("green");
-          setIsFailed(false);
-          setOpen(true);
-        },
-        (error) => {
-          // console.log(error.text);
-          setMessage(t("errorEmail"));
-          setSecondMessage(t("secondErrorEmail"));
-          setColor("red");
-          setIsFailed(true);
-          setOpen(true);
-        }
-      );
+
+    const response = await sendEmail(form, credentials);
+
+    setMessage(response ? t("successEmail") : t("errorEmail"));
+    setSecondMessage(
+      response ? t("secondSuccessEmail") : t("secondErrorEmail")
+    );
+    setColor(response ? "green" : "red");
+    setIsFailed(response ? false : true);
+    setOpen(true);
+
     (e.target as HTMLFormElement).reset();
   };
 
@@ -74,7 +59,11 @@ const Contact = ({ credentials }: ICredentialsProps) => {
           </small>
         </Alert>
         {/* {t('title')} */}
-        <form className="w-full md:w-[80%]" ref={form} onSubmit={sendEmail}>
+        <form
+          className="w-full md:w-[80%]"
+          ref={form}
+          onSubmit={handleSendEmail}
+        >
           <div className="flex flex-col md:flex-row gap-4 mb-4 w-full">
             <input
               className="py-2 border-b-2 border-black dark:border-white bg-transparent focus:outline-none w-full md:w-1/2"
