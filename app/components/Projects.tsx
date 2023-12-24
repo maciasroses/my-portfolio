@@ -38,6 +38,7 @@ const Projects = () => {
         />
       )}
       <Carousel
+        placeholder="Loading..."
         className="rounded-xl"
         loop
         autoplay
@@ -57,6 +58,7 @@ const Projects = () => {
         )}
         prevArrow={({ handlePrev }) => (
           <IconButton
+            placeholder="Prev arrow"
             aria-label="Previous"
             variant="text"
             color="white"
@@ -81,6 +83,7 @@ const Projects = () => {
         )}
         nextArrow={({ handleNext }) => (
           <IconButton
+            placeholder="Next arrow"
             aria-label="Next"
             variant="text"
             color="white"
