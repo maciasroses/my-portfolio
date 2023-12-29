@@ -12,8 +12,12 @@
     "button": "¡Vamos!"
   },
   "About": {
-    "title": "¡Hola!, mucho gusto, soy un desarrollador Full-Stack de 21 años.",
-    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "title": "¡Hola!, mucho gusto, soy un desarrollador full-stack que espera ayudarte con tu próximo desafío. Siéntente libre de conectarte conmigo a través de GitHub o LinkedIn.",
+    "about1": "A lo largo de mi carrera de Ingeniería en Tecnologías Computacionales en el Tecnológico de Monterrey, me he involucrado con diversas tecnologías. Sin embargo, mi favorita es el desarrollo web, donde he adquirido bastante experiencia en el uso de diversos frameworks para el frontend como React con Vite (Herramienta de desarrollo frontend), Remix.run y Next.js. Además, también he adquirido experiencia con tecnologías adicionales como lo son Astro para proyectos personales, así como también el uso de Wordpress y Zoho Sites para el desarrollo de páginas estáticas o el uso de inteligencia artificial para ofrecer soluciones innovadoras.",
+    "about2": "Por otro lado, cuento con experiencia al haber trabajado con otros lenguajes de programación como lo son Python, donde he utilizado frameworks/librerías  como Flask y FastAPI, o Typescript con NestJS usando Prisma como ORM. A su vez, también he trabajado con PHP para el desarrollo de APIs, integrando perfectamente bases de datos en MySQL, PostgreSQL y MongoDB.",
+    "about3": "Por último, también tengo experiencia con servicios en la nube para alojamiento de aplicaciones web, bases de datos o productos de terceros. Algunas de las tecnologías o servicios con los que estoy familiarizado incluyen Fly.io, Render, Vercel, Azure, Docker Hub, Google Cloud Console, AppWrite, Supabase, Resend, EmailJS, Make, Zapier, productos de Zoho como Deluge, CRM, Creator y Flow; y servicios de AWS como Lightsail, S3 Bucket, RDS y Route 53.",
+    "about4": "Toda esta experiencia y conocimiento respalda mi compromiso de mantenerme al tanto de las tecnologías de vanguardia y mi capacidad para adaptarme a diversos entornos de desarrollo.",
+    "prebutton": "Pero no te quedes con mis palabras...",
     "button": "Conoce mis proyectos"
   },
   "Projects": {

@@ -55,13 +55,16 @@ const About = () => {
           </div>
         </div>
         <div className="prose max-w-none prose-lg pt-8 pb-8 dark:prose-invert xl:col-span-2">
-          <p>{t("about")}</p>
+          {Array.from({ length: 4 }).map((_, i) => (
+            <p key={i}>{t(`about${i + 1}`)}</p>
+          ))}
         </div>
       </div>
       <Link
         href="#Projects"
         className="flex flex-col items-center space-y-2 text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-400 duration-300 ease-in-out"
       >
+        <p>{t("prebutton")}</p>
         <p className="text-xl md:text-2xl lg:text-4xl font-bold">
           {t("button")}
         </p>

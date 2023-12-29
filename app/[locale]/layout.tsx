@@ -8,8 +8,9 @@ import { notFound } from "next/navigation";
 const hind = Hind({ weight: "300", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Welcome to my portfolio",
+  title: "JMa",
+  description:
+    "Welcome to my portfolio, This is where our journey begins, working together as a dynamic team to create the best product for your business. Let's turn your vision into reality!",
 };
 
 export function generateStaticParams() {
