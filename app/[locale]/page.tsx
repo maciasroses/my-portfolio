@@ -7,7 +7,7 @@ export default function Index() {
       <Home />
       <About />
       <Projects />
-      <Contact credentials={EMAIL_CREDENTIALS} />
+      <Contact {...EMAIL_CREDENTIALS} />
     </main>
   );
 }

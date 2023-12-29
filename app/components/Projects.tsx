@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <div
       id="Projects"
-      className="w-full min-h-screen flex flex-col justify-center items-center text-center p-14 gap-5"
+      className="w-full min-h-screen flex flex-col justify-center items-center text-center p-14 gap-10"
     >
       {modal && (
         <ProjectPopUp
@@ -130,10 +130,10 @@ const Projects = () => {
                 className="w-full h-full py-5 px-20 sm:p-10 absolute flex flex-col justify-center sm:justify-end items-center bg-black/50 animate-fade"
                 onClick={() => setIsTextVisible(false)}
               >
-                <p className="z-20 text-xl md:text-2xl lg:text-4xl text-white">
+                <p className="z-20 text-xl md:text-2xl lg:text-4xl xl:text-6xl text-white">
                   {project.title}
                 </p>
-                <p className="z-20 text-base md:text-lg lg:text-2xl text-gray-300 hidden sm:block">
+                <p className="z-20 text-base md:text-lg lg:text-2xl xl:text-4xl text-gray-300 hidden sm:block">
                   {t("lan") === "en"
                     ? project.description
                     : project.description_es}
@@ -143,7 +143,7 @@ const Projects = () => {
                     SetModal(true);
                     setProjectSelected(project);
                   }}
-                  className="z-20 rounded-xl px-4 py-1 text-white border border-black bg-black hover:border-white duration-300 ease-in-out"
+                  className="z-20 rounded-xl px-4 py-1 text-sm md:text-md lg:text-xl xl:text-2xl text-white border border-black bg-black hover:border-white duration-300 ease-in-out"
                 >
                   {t("lan") === "en" ? "More" : "Más"}
                 </button>
@@ -153,10 +153,12 @@ const Projects = () => {
         ))}
       </Carousel>
       <div className="flex flex-col gap-2">
-        <p className="text-lg font-bold">{t("title")}</p>
+        <p className="text-4xl md:text-6xl lg:text-8xl font-bold">
+          {t("title")}
+        </p>
         <Link
           href="#Contact"
-          className="px-4 py-2 flex justify-between items-center text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-400 duration-300 ease-in-out"
+          className="text-2xl md:text-4xl lg:text-6xl px-4 py-2 flex justify-center items-center gap-4 text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-400 duration-300 ease-in-out"
         >
           {t("button")}
           <svg
@@ -165,7 +167,7 @@ const Projects = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5 animate-fade-right animate-infinite animate-duration-[2000ms] animate-alternate"
+            className="size-6 md:size-10 lg:size-14 animate-fade-right animate-infinite animate-duration-[2000ms] animate-alternate"
           >
             <path
               strokeLinecap="round"

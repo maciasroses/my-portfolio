@@ -22,9 +22,7 @@ export interface ICredentialsValues {
   publicKey?: string;
 }
 
-export interface ICredentialsProps {
-  credentials: ICredentialsValues;
-}
+export type typeCredential = ICredentialsValues;
 
 export type color =
   | "blue-gray"

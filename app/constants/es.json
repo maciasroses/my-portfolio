@@ -8,7 +8,7 @@
     "locale": "en"
   },
   "Home": {
-    "title": "¿Estás en busca de tu próximo sitio web increíble?",
+    "title": "¿Estás en busca de tu próxima aplicación web increíble?",
     "button": "¡Vamos!"
   },
   "About": {
@@ -22,7 +22,7 @@
     "button": "Escríbeme!"
   },
   "Contact": {
-    "title": "Esta es la sección de contacto",
+    "title": "¡Hagamos algo increíble juntos!",
     "name": "Nombre",
     "email": "Correo electrónico",
     "message": "Mensaje",
@@ -34,6 +34,6 @@
     "emailForProblems": "Por favor envíame un correo."
   },
   "Footer": {
-    "title": "Este es el píe de página"
+    "rights": "Todos los derechos reservados."
   }
 }

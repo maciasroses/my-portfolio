@@ -5,10 +5,8 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import ThemeButton from "./Themebutton";
 import { useRouter } from "next/navigation";
-import BlackLogo from "@/public/Icons/JMaBlackWithoutBackground.webp";
-import WhiteLogo from "@/public/Icons/JMaWhiteWithoutBackground.webp";
-import Image from "next/image";
 import { NAVLINKS } from "@/app/constants/links";
+import Logo from "./Logo";
 
 const NavButton = ({
   isTop,
@@ -64,27 +62,14 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-40 w-full fixed backdrop-blur bg-white/80 drop-shadow-2xl dark:text-white dark:bg-[#202124FF]/80 animate-fade animate-duration-[2000ms] animate-delay-[4000ms] duration-300 ease-in-out ${
-        scrollingUp ? "translate-y-0 " : "-translate-y-full"
+      className={`z-40 w-full fixed backdrop-blur bg-white/80 dark:text-white dark:bg-[#202124FF]/80 animate-fade animate-duration-[2000ms] animate-delay-[4000ms] duration-300 ease-in-out ${
+        scrollingUp
+          ? "translate-y-0 drop-shadow-lg md:drop-shadow-2xl"
+          : "-translate-y-full"
       }`}
     >
-      <nav className="max-w-[1440px] mx-auto flex justify-between items-center md:px-16 px-6 py-4 md:py-0">
-        <Link
-          href="/"
-          className="flex items-center hover:animate-pulse hover:scale-105 duration-300"
-        >
-          <Image
-            alt="Logo"
-            src={WhiteLogo}
-            className="block dark:hidden w-12 h-auto"
-          />
-          <Image
-            alt="Logo"
-            src={BlackLogo}
-            className="hidden dark:block w-12 h-auto"
-          />
-          <p>JMa</p>
-        </Link>
+      <nav className="max-w-[1440px] mx-auto flex justify-between items-center md:px-16 px-6 py-2 md:py-0 text-base xl:text-xl">
+        <Logo />
         <div className="flex space-x-4 md:space-x-0">
           <div className="hidden md:block">
             <ul className="flex justify-center items-center h-full">

@@ -8,7 +8,7 @@
     "locale": "es"
   },
   "Home": {
-    "title": "Are you looking for your next awesome website?",
+    "title": "Are you looking for your next awesome web app?",
     "button": "I am"
   },
   "About": {
@@ -22,7 +22,7 @@
     "button": "Contact me!"
   },
   "Contact": {
-    "title": "This is the contact section",
+    "title": "Let's build something great together!",
     "name": "Name",
     "email": "E-mail",
     "message": "Message",
@@ -34,6 +34,6 @@
     "emailForProblems": "please contact me."
   },
   "Footer": {
-    "title": "This is the footer"
+    "rights": "All rights reserved."
   }
 }

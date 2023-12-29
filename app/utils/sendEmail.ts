@@ -1,10 +1,10 @@
 import { RefObject } from "react";
 import emailjs from "@emailjs/browser";
-import { ICredentialsValues } from "../types";
+import { typeCredential } from "../types";
 
 export const sendEmail = async (
   form: RefObject<HTMLFormElement>,
-  credentials: ICredentialsValues
+  credentials: typeCredential
 ) => {
   try {
     await emailjs
@@ -12,7 +12,7 @@ export const sendEmail = async (
         credentials.serviceId!,
         credentials.templateId!,
         form.current!,
-        ""
+        credentials.publicKey!
       )
       .then(
         (result) => {

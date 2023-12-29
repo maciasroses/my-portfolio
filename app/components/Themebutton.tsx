@@ -26,7 +26,7 @@ export default function ThemeButton() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5"
+          className="size-5 xl:size-6"
         >
           <path
             strokeLinecap="round"
@@ -41,7 +41,7 @@ export default function ThemeButton() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5"
+          className="size-5 xl:size-6"
         >
           <path
             strokeLinecap="round"

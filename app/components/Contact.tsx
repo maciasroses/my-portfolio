@@ -3,20 +3,23 @@
 import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
 import { Alert } from "@material-tailwind/react";
-import type { ICredentialsProps, color } from "../types";
+import type { color, typeCredential } from "../types";
 import { sendEmail } from "../utils/sendEmail";
+import { Pending } from "./icons";
 
-const Contact = ({ credentials }: ICredentialsProps) => {
+const Contact = (credentials: typeCredential) => {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState<color>("green");
   const [message, setMessage] = useState("");
   const [secondMessage, setSecondMessage] = useState("");
   const [isFailed, setIsFailed] = useState(false);
+  const [pending, setPending] = useState(false);
 
   const t = useTranslations("Contact");
   const form = useRef<HTMLFormElement>(null);
 
   const handleSendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    setPending(true);
     e.preventDefault();
 
     const response = await sendEmail(form, credentials);
@@ -30,6 +33,7 @@ const Contact = ({ credentials }: ICredentialsProps) => {
     setOpen(true);
 
     (e.target as HTMLFormElement).reset();
+    setPending(false);
   };
 
   return (
@@ -58,41 +62,49 @@ const Contact = ({ credentials }: ICredentialsProps) => {
             )}
           </small>
         </Alert>
-        {/* {t('title')} */}
-        <form
-          className="w-full md:w-[80%]"
-          ref={form}
-          onSubmit={handleSendEmail}
-        >
-          <div className="flex flex-col md:flex-row gap-4 mb-4 w-full">
-            <input
-              className="py-2 border-b-2 border-black dark:border-white bg-transparent focus:outline-none w-full md:w-1/2"
-              type="text"
-              name="name"
-              required
-              placeholder={t("name")}
-            />
-            <input
-              className="py-2 border-b-2 border-black dark:border-white bg-transparent focus:outline-none w-full md:w-1/2"
-              type="email"
-              name="email"
-              required
-              placeholder={t("email")}
-            />
-          </div>
-          <textarea
-            className="py-2 border-b-2 mb-4 border-black dark:border-white bg-transparent focus:outline-none w-full min-h-[50px]"
-            name="message"
-            required
-            placeholder={t("message")}
-          />
-          <button
-            type="submit"
-            className="px-4 py-2 border-2 border-black bg-black text-white hover:bg-white hover:text-black dark:border-white dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white  duration-300 ease-in-out"
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <p className="text-4xl md:text-6xl lg:text-8xl font-bold text-left w-full">
+            {t("title")}
+          </p>
+          <form
+            className="w-full md:w-[80%]"
+            ref={form}
+            onSubmit={handleSendEmail}
           >
-            {t("button")}
-          </button>
-        </form>
+            <div className="flex flex-col md:flex-row gap-4 mb-4 w-full text-xl lg:text-2xl xl:text-4xl">
+              <input
+                className="py-2 border-b-2 border-black dark:border-white bg-transparent focus:outline-none w-full md:w-1/2"
+                type="text"
+                name="name"
+                required
+                placeholder={t("name")}
+              />
+              <input
+                className="py-2 border-b-2 border-black dark:border-white bg-transparent focus:outline-none w-full md:w-1/2"
+                type="email"
+                name="email"
+                required
+                placeholder={t("email")}
+              />
+            </div>
+            <textarea
+              className="py-2 border-b-2 mb-4 border-black dark:border-white bg-transparent focus:outline-none w-full min-h-[50px] text-xl lg:text-2xl xl:text-4xl"
+              name="message"
+              required
+              placeholder={t("message")}
+            />
+            <button
+              type="submit"
+              disabled={pending}
+              className={`px-4 py-2 text-base lg:text-xl xl:text-2xl rounded-2xl duration-300 ease-in-out ${
+                !pending &&
+                "border-2 border-black hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
+              }`}
+            >
+              {pending ? <Pending /> : `${t("button")}`}
+            </button>
+          </form>
+        </div>
       </div>
     </>
   );

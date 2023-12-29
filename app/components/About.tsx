@@ -62,14 +62,16 @@ const About = () => {
         href="#Projects"
         className="flex flex-col items-center space-y-2 text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-400 duration-300 ease-in-out"
       >
-        <p>{t("button")}</p>
+        <p className="text-xl md:text-2xl lg:text-4xl font-bold">
+          {t("button")}
+        </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8 animate-bounce animate-infinite"
+          className="size-6 md:size-8 lg:size-12 animate-bounce animate-infinite"
         >
           <path
             strokeLinecap="round"
