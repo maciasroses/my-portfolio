@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import BlackLogo from "/public/Icons/JMaBlackWithoutBackground.webp";
-import WhiteLogo from "/public/Icons/JMaWhiteWithoutBackground.webp";
 
 const Logo = () => {
   return (
@@ -9,16 +7,22 @@ const Logo = () => {
       href="/"
       className="flex items-center hover:animate-pulse hover:scale-105 duration-300"
     >
-      <Image
-        alt="Logo"
-        src={WhiteLogo}
-        className="block dark:hidden w-12 h-auto"
-      />
-      <Image
-        alt="Logo"
-        src={BlackLogo}
-        className="hidden dark:block w-12 h-auto"
-      />
+      <div className="size-12 relative">
+        <Image
+          alt="Logo"
+          src="/Icons/JMaWhiteWithoutBackground.webp"
+          fill
+          sizes="100%"
+          className="block dark:hidden size-full object-cover"
+        />
+        <Image
+          alt="Logo"
+          src="/Icons/JMaBlackWithoutBackground.webp"
+          fill
+          sizes="100%"
+          className="hidden dark:block size-full object-cover"
+        />
+      </div>
       <p className="text-base xl:text-xl">JMa</p>
     </Link>
   );

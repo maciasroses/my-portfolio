@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Me from "/public/macias.webp";
 import Link from "next/link";
 import { DownArrow, Github, LinkedIn } from "./icons";
 
@@ -15,11 +14,15 @@ const About = () => {
     >
       <article className="items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
         <div className="flex flex-col items-center pt-8">
-          <Image
-            alt="Picture of Macias Romero"
-            src={Me}
-            className="size-48 rounded-full object-cover object-bottom"
-          />
+          <div className="size-48 relative">
+            <Image
+              alt="Picture of Macias Romero"
+              src="/macias.webp"
+              fill
+              sizes="100%"
+              className="size-full rounded-full object-cover object-bottom"
+            />
+          </div>
           <h1 className="pt-4 pb-2 text-2xl font-medium leading-8 tracking-tight">
             Jorge Humberto Macías Romero
           </h1>
