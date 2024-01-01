@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import BlackLogo from "@/public/Icons/JMaBlackWithoutBackground.webp";
-import WhiteLogo from "@/public/Icons/JMaWhiteWithoutBackground.webp";
+import BlackLogo from "/public/Icons/JMaBlackWithoutBackground.webp";
+import WhiteLogo from "/public/Icons/JMaWhiteWithoutBackground.webp";
 
 const Logo = () => {
   return (

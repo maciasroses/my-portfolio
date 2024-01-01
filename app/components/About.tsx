@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Me from "@/public/macias.webp";
+import Me from "/public/macias.webp";
 import Link from "next/link";
 import { DownArrow, Github, LinkedIn } from "./icons";
 
