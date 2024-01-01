@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="w-full bg-gray-100 dark:bg-black dark:text-white">
       <div className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
         <Logo />
-        <div className="flex flex-col md:flex-row items-end gap-1 font-extrabold text-base xl:text-xl">
+        <div className="flex flex-col md:flex-row items-end gap-1 text-base xl:text-xl">
           <p className="flex flex-col sm:flex-row items-end gap-1">
             © 2023 - {new Date().getFullYear()}
             <span className="md:block hidden">

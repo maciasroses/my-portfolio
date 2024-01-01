@@ -8,7 +8,7 @@ const Collaborations = () => {
   const t = useTranslations("Collaborations");
   return (
     <article>
-      <h1 className="text-xl md:text-2xl lg:text-4xl font-bold">
+      <h1 className="text-xl md:text-2xl lg:text-4xl font-extrabold">
         {t("title")}
       </h1>
       <div className="grid gap-y-8 sm:gap-6 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-10 mt-5">
@@ -30,7 +30,7 @@ const Collaborations = () => {
                 />
               </div>
               <div className="p-4">
-                <h2 className="text-xl mb-1 font-extrabold">
+                <h2 className="text-xl mb-1 font-medium">
                   {collaboration.title}
                 </h2>
                 <p className="h-[95px] overflow-y-auto">

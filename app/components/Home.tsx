@@ -17,7 +17,7 @@ const Home = () => {
         muted
         poster="/customflower.webm"
         src="/customflower.webm"
-        className=" animate-fade animate-delay-[2000ms]"
+        className="animate-fade animate-delay-[2000ms] rounded-full"
       />
       <h1 className="text-4xl md:text-6xl lg:text-8xl animate-fade-down animate-duration-[2000ms]">
         {t("title")}

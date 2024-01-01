@@ -20,7 +20,7 @@ const About = () => {
             src={Me}
             className="size-48 rounded-full object-cover object-bottom"
           />
-          <h1 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+          <h1 className="pt-4 pb-2 text-2xl font-medium leading-8 tracking-tight">
             Jorge Humberto Macías Romero
           </h1>
           <p className="text-center">{t("title")}</p>
