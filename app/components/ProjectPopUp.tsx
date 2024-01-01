@@ -6,38 +6,12 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import { IProjectProps } from "@/app/types";
+import { IProjectPopUpProps, typeSection } from "@/app/types";
+import { AccordionArrow, X } from "./icons";
 
-function Icon({ id, open }: { id: number; open: number }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={2}
-      stroke="currentColor"
-      className={`${
-        id === open ? "rotate-180" : ""
-      } h-5 w-5 transition-transform`}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-      />
-    </svg>
-  );
-}
-
-const ProjectPopUp = ({
-  lan,
-  project,
-  onClick,
-}: {
-  lan: string;
-  project: IProjectProps;
-  onClick: any;
-}) => {
+const ProjectPopUp = ({ lan, project, onClick }: IProjectPopUpProps) => {
+  const [open, setOpen] = useState(0);
+  const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
   const modalRef = useRef<HTMLDivElement>(null);
   const {
     title,
@@ -73,7 +47,7 @@ const ProjectPopUp = ({
     };
   }, [modalRef, onClick]);
 
-  const sections = [
+  const sections: typeSection = [
     {
       id: 1,
       titleEn: "Summary",
@@ -119,9 +93,6 @@ const ProjectPopUp = ({
     },
   ];
 
-  const [open, setOpen] = useState(0);
-  const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
-
   return (
     <div className="fixed h-screen w-full z-50 bg-black/50 top-0 p-10 flex justify-center items-center animate-fade">
       <div
@@ -134,20 +105,7 @@ const ProjectPopUp = ({
               onClick={onClick}
               className="duration-300 rounded-full hover:text-gray-500"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <X />
             </button>
           </div>
           <h1 className="text-xl md:text-3xl xl:text-5xl sticky top-0 bg-white dark:bg-[#202124FF] pb-2 drop-shadow-md animate-fade animate-delay-500 z-10">
@@ -184,7 +142,7 @@ const ProjectPopUp = ({
                   unmount: { scale: 0.9 },
                 }}
                 open={open === section.id}
-                icon={<Icon id={section.id} open={open} />}
+                icon={<AccordionArrow id={section.id} open={open} />}
                 className={`animate-fade animate-delay-[${
                   2000 + section.id * 200
                 }ms]`}
@@ -204,10 +162,12 @@ const ProjectPopUp = ({
                   {section.isList ? (
                     <ul>
                       {lan === "en"
-                        ? section.contentEn.map((item: any, index: any) => (
+                        ? Array.isArray(section.contentEn) &&
+                          section.contentEn.map((item, index) => (
                             <li key={index}>{item}</li>
                           ))
-                        : section.contentEs.map((item: any, index: any) => (
+                        : Array.isArray(section.contentEs) &&
+                          section.contentEs.map((item, index) => (
                             <li key={index}>{item}</li>
                           ))}
                     </ul>

@@ -1,6 +1,13 @@
-export interface IProjectProps {
+interface IProjectProps {
+  id: number;
   title: string;
+  img: string;
   popUpImg: string;
+  imgSupport1: string;
+  imgSupport2: string;
+  imgSupport3: string;
+  description: string;
+  description_es: string;
   summary: string;
   summary_es: string;
   context: string;
@@ -9,20 +16,48 @@ export interface IProjectProps {
   planning_es: string;
   technologies: string;
   technologies_es: string;
-  features: any;
-  features_es: any;
+  features: string[];
+  features_es: string[];
   results: string;
   results_es: string;
   link: string;
 }
 
-export interface ICredentialsValues {
+export interface IProjectPopUpProps {
+  lan: string;
+  project: IProjectProps;
+  onClick: () => void;
+}
+
+interface ISectionProps {
+  id: number;
+  titleEn: string;
+  titleEs: string;
+  contentEn: string | string[];
+  contentEs: string | string[];
+  isList?: boolean;
+}
+
+export type typeSection = ISectionProps[];
+
+interface ICredentialsValues {
   serviceId?: string;
   templateId?: string;
   publicKey?: string;
 }
 
 export type typeCredential = ICredentialsValues;
+
+export interface IAccordionArrowProps {
+  id: number;
+  open: number;
+}
+
+export interface INavButtonProps {
+  isTop?: boolean;
+  onClick: any;
+  title: string;
+}
 
 export type color =
   | "blue-gray"

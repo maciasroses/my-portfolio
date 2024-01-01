@@ -7,26 +7,8 @@ import ThemeButton from "./Themebutton";
 import { useRouter } from "next/navigation";
 import { NAVLINKS } from "@/app/constants/links";
 import Logo from "./Logo";
-
-const NavButton = ({
-  isTop,
-  onClick,
-  title,
-}: {
-  isTop?: boolean;
-  onClick: any;
-  title: string;
-}) => {
-  return (
-    <button
-      type="button"
-      className={`${isTop ? "pb-4 px-4" : "p-4"}`}
-      onClick={onClick}
-    >
-      <li>{title}</li>
-    </button>
-  );
-};
+import NavButton from "./NavButton";
+import { DropDownMenu, MxFlag, UsFlag, X } from "./icons";
 
 const Navbar = () => {
   const t = useTranslations("Navbar");
@@ -74,21 +56,22 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex justify-center items-center h-full">
               {NAVLINKS.map((link) => (
-                <li key={link.key}>
+                <li key={link.key} className="hover:scale-105 duration-300">
                   <Link
-                    className="p-4 border border-transparent hover:border-b-black dark:hover:border-b-white hover:animate-pulse hover:scale-105 duration-300"
+                    className="p-4 border border-transparent hover:border-b-black dark:hover:border-b-white hover:animate-pulse duration-300"
                     href={link.href}
                   >
                     {t(link.name)}
                   </Link>
                 </li>
               ))}
-              <li>
+              <li className="hover:scale-105 duration-300 ">
                 <Link
-                  className="p-4 border border-transparent hover:border-b-black dark:hover:border-b-white hover:animate-pulse hover:scale-105 duration-300"
+                  className="p-4 border border-transparent hover:border-b-black dark:hover:border-b-white hover:animate-pulse duration-300 flex gap-2 items-center"
                   href={t("locale")}
                 >
                   {t("language")}
+                  {t("locale") === "en" ? <UsFlag /> : <MxFlag />}
                 </Link>
               </li>
             </ul>
@@ -98,37 +81,7 @@ const Navbar = () => {
             className="md:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            {!menuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 9h16.5m-16.5 6.75h16.5"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            )}
+            {!menuOpen ? <DropDownMenu /> : <X />}
           </button>
           <ThemeButton />
         </div>
@@ -145,7 +98,10 @@ const Navbar = () => {
             </li>
           ))}
           <li className="p-4">
-            <Link href={t("locale")}>{t("language")}</Link>
+            <Link href={t("locale")} className="flex gap-2 items-center">
+              {t("language")}
+              {t("locale") === "en" ? <UsFlag /> : <MxFlag />}
+            </Link>
           </li>
         </ul>
       )}

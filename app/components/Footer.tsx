@@ -17,7 +17,7 @@ const Footer = () => {
             </span>
             <span className="block md:hidden">J. H. Macías Romero</span>
           </p>
-          <p>{t("rights")}</p>
+          <p className="text-right">{t("rights")}</p>
         </div>
       </div>
     </footer>

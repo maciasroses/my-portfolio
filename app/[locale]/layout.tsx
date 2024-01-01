@@ -36,7 +36,7 @@ export default async function RootLayout({
       <body className={`${hind.className} dark:text-white`}>
         <NextIntlClientProvider locale={locale} messages={translations}>
           <Provider>
-            <div className="fixed top-0 z-[-2] h-screen w-screen dark:bg-[#202124FF] bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
+            <div className="fixed top-0 z-[-2] h-screen w-screen dark:bg-[#202124FF] bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(255,0,0,0.12)_0,rgba(255,165,0,0)_50%,rgba(255,165,0,0)_100%)]"></div>
             <Navbar />
             {children}
             <Footer />

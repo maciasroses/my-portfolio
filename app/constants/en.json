@@ -25,6 +25,10 @@
     "title": "Did you like them?",
     "button": "Contact me!"
   },
+  "Collaborations": {
+    "lan": "en",
+    "title": "Collaborations"
+  },
   "Contact": {
     "title": "Let's build something great together!",
     "name": "Name",

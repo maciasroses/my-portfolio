@@ -25,6 +25,10 @@
     "title": "¿Te gustó lo que viste?",
     "button": "Escríbeme!"
   },
+  "Collaborations": {
+    "lan": "es",
+    "title": "Colaboraciones"
+  },
   "Contact": {
     "title": "¡Hagamos algo increíble juntos!",
     "name": "Nombre",
