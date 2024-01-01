@@ -12,7 +12,8 @@ const config: Config = withMT({
     extend: {},
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require("@tailwindcss/typography")
   ],
 })
 export default config

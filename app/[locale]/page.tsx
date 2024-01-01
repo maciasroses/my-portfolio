@@ -1,5 +1,5 @@
-
-import { About, Contact, Home, Projects } from "@/components";
+import { About, Contact, Home, Projects } from "@/app/components";
+import { EMAIL_CREDENTIALS } from "../utils/credentials";
 
 export default function Index() {
   return (
@@ -7,7 +7,7 @@ export default function Index() {
       <Home />
       <About />
       <Projects />
-      <Contact />
+      <Contact {...EMAIL_CREDENTIALS} />
     </main>
-  )
+  );
 }

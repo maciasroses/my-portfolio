@@ -1,0 +1,44 @@
+<xml version="1.0" encoding="UTF-8">
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/#Home</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/#About</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/#Projects</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/#Contact</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/es</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/es#Home</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/es#About</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/es#Projects</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+        <url>
+            <loc>https://my-portfolio-maciasroses.vercel.app/es#Contact</loc>
+            <lastmod>2023-12-31</lastmod>
+        </url>
+    </urlset>
+</xml>
