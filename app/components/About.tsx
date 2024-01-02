@@ -44,9 +44,11 @@ const About = () => {
             </Link>
           </div>
         </div>
-        <div className="prose max-w-none prose-lg pt-8 pb-8 dark:prose-invert xl:col-span-2">
+        <div className="max-w-none pt-8 pb-8 xl:col-span-2 leading-loose text-lg">
           {Array.from({ length: 4 }).map((_, i) => (
-            <p key={i}>{t(`about${i + 1}`)}</p>
+            <p className="my-4" key={i}>
+              {t(`about${i + 1}`)}
+            </p>
           ))}
         </div>
       </article>
