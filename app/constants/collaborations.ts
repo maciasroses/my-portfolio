@@ -4,7 +4,7 @@ const collaborations = [
     img: "/Collaborations/Whistleblowwer.webp",
     title: "Whistleblowwer",
     overview:
-      "In this project I assumed the responsibility of restructuring the technological architecture under development, while contributing to the adaption of components for various screen resolutions and dimensions. The technologies employed encompass a React App styled using Tailwind CSS.",
+      "In this project, I assumed the responsibility of restructuring the technological architecture under development, while contributing to the adaptation of components for various screen resolutions and dimensions. The technologies employed encompass a React App styled using Tailwind CSS.",
     overwiew_es:
       "En este proyecto asumí la responsabilidad de reestructurar la arquitectura tecnológica en desarrollo, al mismo tiempo que contribuí a la adaptación de componentes para diversas resoluciones y dimensiones de pantalla. Las tecnologías empleadas abarcan una aplicación React diseñada con TailwindCSS.",
     link: "https://whistleblowwer.com",
@@ -34,7 +34,7 @@ const collaborations = [
     img: "/Collaborations/CostoDeVida.webp",
     title: "Costo de Vida",
     overview:
-      "In this project, my responsibilities included front-end tasks, involving the creation of components and implementation of requisite logic that needed for manipulation of data, as well as back-end duties, encompassing the development of endpoints for database manipulation. The utilized technologies compise a React App styled with pure CSS for the front-end, and PHP and MySQL for the back-end.",
+      "In this project, my responsibilities included front-end tasks, involving the creation of components and implementation of requisite logic that needed for manipulation of data, as well as back-end duties, encompassing the development of endpoints for database manipulation. The utilized technologies comprise a React App styled with pure CSS for the front-end, and PHP and MySQL for the back-end.",
     overwiew_es:
       "En este proyecto, mis responsabilidades incluían tareas de front-end, que implicaban la creación de componentes y la implementación de la lógica necesaria para la manipulación de datos, así como tareas de back-end, que abarcaban el desarrollo de puntos finales para la manipulación de bases de datos. Las tecnologías utilizadas comprenden una aplicación React diseñada con CSS para el front-end y PHP y MySQL para el back-end.",
     link: "https://admision.tec.mx/costo-de-vida/",

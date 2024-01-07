@@ -8,11 +8,11 @@ const projects = [
     imgSupport2: "/CommunityLabAllianceProject/cla-3.webp",
     imgSupport3: "/CommunityLabAllianceProject/cla-4.webp",
     description:
-      "A web project made with a website builder anda AI redesign, with dynamic content, and AI-driven pre-diagnosis.",
+      "A web project made with a website builder and an AI redesign, with dynamic content, and AI-driven pre-diagnosis.",
     description_es:
       "Un proyecto web realizado con website builder y rediseño de IA, con contenido dinámico y prediagnóstico impulsado por IA.",
     summary:
-      "The web project stants out from others as it employs a website builder, catering to freelancers who seek and offer solutions. Both groups are interconnected through the Startup Community Lab Alliance, the same entity that initiated the platform request.",
+      "The web project stands out from others as it employs a website builder, catering to freelancers who seek and offer solutions. Both groups are interconnected through the Startup Community Lab Alliance, the same entity that initiated the platform request.",
     summary_es:
       "El proyecto web se distingue de otros al utilizar un website builder, dirigido a freelancers que buscan y ofrecen soluciones. Ambos grupos están conectados a través de la Startup Community Lab Alliance, la misma entidad que solicitó la plataforma.",
     context:
@@ -32,7 +32,7 @@ const projects = [
       "Dynamic content facilitated by the Zoho programming language (Deluge).",
       "Integration with tools like Zoho CRM, Zoho Creator, Zoho Flow and Make.",
       "Easy content updating for any admin user.",
-      "Futhermore, end-user interaction with artificial intelligence enables the generation of pre-diagnoses.",
+      "Furthermore, end-user interaction with artificial intelligence enables the generation of pre-diagnoses.",
     ],
     features_es: [
       "Las características clave de la página incluyen accesibilidad a través de dominios específicos con o sin WWW gracias a la redirección en ambos casos.",
@@ -60,7 +60,7 @@ const projects = [
     description_es:
       "Este proyecto tenía como objetivo destacar de manera global el trabajo excepcional del equipo mediante una galería de proyectos atractiva y auténtica, desafiando los estándares convencionales para cautivar a la audiencia.",
     summary:
-      "Web project in which the architecture team, composed of Luis Alfredo Lucero Robles and Jacqueline Nevárez Amado, presents their projects over time. It allows users to examine each project with all its relevant features and best visual representations.",
+      "A web project in which the architecture team, composed of Luis Alfredo Lucero Robles and Jacqueline Nevárez Amado, presents their projects over time. It allows users to examine each project with all its relevant features and best visual representations.",
     summary_es:
       "Proyecto web en el que el equipo de arquitectura, compuesto por Luis Alfredo Lucero Robles y Jacqueline Nevárez Amado, presenta sus proyectos a lo largo del tiempo. Permite a los usuarios examinar cada proyecto con todas sus características relevantes y sus mejores representaciones visuales.",
     context:
@@ -82,7 +82,7 @@ const projects = [
       "Features continuous integration and deployment.",
       "Available in both English and Spanish.",
       "Facilitates user communication with portal owners through an integrated email system.",
-      "Provides advanced project search and filtering capabilities, enabling users to find specific projects by keywords and categorization.",
+      "Provides advanced project search and filtering capabilities, enabling users to find specific projects by keywords and categories.",
       "Highly configurable through a built-in administrator, offering users the following functions: Add, edit, and delete projects, Add, edit, and delete areas, Add, edit, and delete types, Add and delete project files, Add, edit, and delete project areas or types, and Set, remove, and edit a carousel according to priority.",
     ],
     features_es: [
@@ -114,7 +114,7 @@ const projects = [
     description_es:
       "Un proyecto web exclusivo con partituras musicales para el acceso de estudiantes, diseño adaptable, búsqueda potente y controles administrativos.",
     summary:
-      "A private web initiative overseen by music instructor Luis Alfredo González entails the uploading of accompaniment scores to facilitate student rehearsals, accomapnied by track and studio audio resources.",
+      "A private web initiative overseen by music instructor Luis Alfredo González entails the uploading of accompaniment scores to facilitate student rehearsals, accompanied by track and studio audio resources.",
     summary_es:
       "Un proyecto web privado dirigido por el profesor de música Luis Alfredo González que consiste en la carga de partituras de acompañamiento para facilitar los ensayos de sus estudiantes, acompañadas de pistas de audio de estudio.",
     context:
@@ -122,11 +122,11 @@ const projects = [
     context_es:
       "Esta inicitiva tuvo como objetivo digitalizar y compartir la totalidad del trabajo intelectual del instructor, siendo cada composición meticulosamente grabada y poseída por él, promoviendo así la accesibilidad y el intercambio entre sus alumnos.",
     planning:
-      "The porject underwent iterative developmental stages, envolving from rudimentary beginnings to its current sophisticated iteration, owing to the collaborative efforts of the professor's creative input, the development team comprising Victoria Lucero Robles, myself, and project leader Pablo César Ruiz Hernández. Notwithstanding the iterative design processes, equitable distribution of workload among developers was observed from project inception.",
+      "The project underwent iterative developmental stages, involving from rudimentary beginnings to its current sophisticated iteration, owing to the collaborative efforts of the professor's creative input, the development team comprising Victoria Lucero Robles, myself, and project leader Pablo César Ruiz Hernández. Notwithstanding the iterative design processes, equitable distribution of workload among developers was observed from project inception.",
     planning_es:
       "El proyectó pasó por diversas etapas de desarrollo, evolucionando desde sus inicios rudimentarios hasta su sofisticada iteración actual. gracias a los esfuerzos colaborativos del aporte creativo del profesor, el equipo de desarrollo conformado por Victoria Lucero Robles, su servidor, y el líder del proyecto, Pablo César Ruiz Hernández. A pesar de los procesos de diseño iterativos, se observó una distribución equitativa de la carga de trabajo entre los desarrolladores desde el inicio del proyecto.",
     technologies:
-      "Employing an agile methodology and adopting a monolithic strategy, the website was meticulously crafted using a blend of Remix.run technologies for the user interface, Prisma ORM coupled with PostgreSQL for score management, and AWS cloud services such as S3 for storage and consumption, and Route 53 for domain hosting. Additionally, Fly's cloud service was used for application hosting.",
+      "Employing an agile methodology and adopting a monolithic strategy, the website was meticulously crafted using a blend of the Remix.run technologies for the user interface, Prisma ORM coupled with PostgreSQL for score management, and AWS cloud services such as S3 for storage and consumption, and Route 53 for domain hosting. Additionally, Fly's cloud service was used for application hosting.",
     technologies_es:
       "Empleando una metodología ágial y adoptando una estategia monolítica, el sitio web fue meticulosamente elaborado utilizando una combinación de tecnologías Remix.run para la interfaz de usuario, Prisma ORM junto con PostgreSQL para la gestión de partituras, y servicios en la nube de AWS como S3 para el almacenamiento y consumo, y Route 53 para el hospedaje del dominio. Además, se utilizó el servicio de la nube de Fly para el hospedaje de la aplicación.",
     features: [
@@ -136,7 +136,7 @@ const projects = [
       "Implementation of continuous integration practices.",
       "Integration of a metronome iframe, supplementing the scores and audio resources.",
       "Robust filtering and search functionalities, enabling categorization by score type and facilitating name and author-based searches.",
-      "Administrator-configurable settings, accessible via distinct authentication methods from student access, granting exlusive functionalities: Addition and deletion of sheet music. Inclusion, editing, and removal of comments pertaining to each score.",
+      "Administrator-configurable settings, accessed via distinct authentication methods from student access, granting exclusive functionalities: Addition and deletion of sheet music. Inclusion, editing, and removal of comments pertaining to each score.",
     ],
     features_es: [
       "Accesibilidad exclusiva a través de un dominio designado.",
@@ -162,11 +162,11 @@ const projects = [
     imgSupport2: "/SmartspeakProject/smartspeak-3.webp",
     imgSupport3: "/SmartspeakProject/smartspeak-4.webp",
     description:
-      "An AI-powered web project that evaluates english speaking skills, winning the second place nationally in the Expo Ingenierías 2023.",
+      "An AI-powered web project that evaluates English speaking skills, winning the second place nationally in the Expo Ingenierías 2023.",
     description_es:
       "Un proyecto web que evalúa las habilidades de habla en inglés, ganando el segundo lugar a nivel nacional en la Expo Ingenierías 2023.",
     summary:
-      "A conceptualization of a web project was devised to assess an individual's english proficiency through an interaction with artificial intelligence, hearnessing state-of-the-art technologies.",
+      "A conceptualization of a web project was devised to assess an individual's English proficiency through an interaction with artificial intelligence, harnessing state-of-the-art technologies.",
     summary_es:
       "Se ideó un proyecto web destinado a evaluar el nivel de inglés de una persona a través de una conversación con inteligencia artificial, aprovechando tecnologías de vanguardia.",
     context:
@@ -174,11 +174,11 @@ const projects = [
     context_es:
       "Ejecutado como parte de un semestre académico, el proyecto abordó una situación específica planteada por Wizeline, el socio formador. La colaboración con profesionales de la misma compañía y profesores del curso facilitó su finalización con éxito.",
     planning:
-      "The project originated from a serires of challenges presented by the educational partner, allowing us to choose one for resolution using either the tools proposed by them or alternatives suggested by our team. The inclusive effort of all collaborators: Victoria Lucero Robles, Belén Ariadna González Mendoza, Salma Isabel Martínez Calderón, Adrián Emmanuel Faz Mercado, Francisco Mestizo Hernández, and myself, contributed to the project's success, involving tasks such as documentation, design, distribution of components/sections, service configurations, and task management.",
+      "The project originated from a series of challenges presented by the educational partner, allowing us to choose one for resolution using either the tools proposed by them or alternatives suggested by our team. The inclusive effort of all collaborators: Victoria Lucero Robles, Belén Ariadna González Mendoza, Salma Isabel Martínez Calderón, Adrián Emmanuel Faz Mercado, Francisco Mestizo Hernández, and myself, contributed to the project's success, involving tasks such as documentation, design, distribution of components/sections, service configurations, and task management.",
     planning_es:
       "El proyecto se originó a partir de una serie de desafíos presentados por el socio formador, permitiéndonos elegir uno para resolverlo con las herramientas propuestas por ellos o alternativas propuestas por nuestro equipo. El esfuerzo inclusivo de todos los colaboradores: Victoria Lucero Robles, Belén Ariadna González Mendoza, Salma Isabel Martínez Calderón, Adrián Emmanuel Faz Mercado, Francisco Mestizo Hernández y yo mismo, contribuyó al éxito del proyecto, involucrando tareas como documentación, distribución de componentes/secciones, configuraciones de servicios y gestión de tareas.",
     technologies:
-      "Utilizing an agile methodology and a monolithic strategy, the project employed React within the Remix.run framework, PostgreSQL Prisma ORM for data storage, AWS RDS for database hosting, Lightsail for global page hosting, Github Actions and Docker Hub for CI/CD, and S3 Bucket for multimedia files storage generated after each use of the application.",
+      "Utilizing an agile methodology and a monolithic strategy, the project employed React within the Remix.run framework, PostgreSQL Prisma ORM for data storage, AWS RDS for database hosting, Lightsail for global page hosting, Github Actions and Docker Hub for CI/CD, and S3 Bucket for multimedia file storage generated after each use of the application.",
     technologies_es:
       "Utilizando una metodología ágil y una tecnología de monolito, el proyecto empleó React dentro del marco de trabajo Remix.run, PostgreSQL Prisma ORM para el almacenamiento de datos, AWS RDS para el alojamiento de la base de datos, Lightsail para el alojamiento global de la página, GitHub Actions y Docker Hub para CI/CD, y S3 Bucket para el almacenamiento de archivos multimedia generados después de cada uso de la aplicación.",
     features: [
