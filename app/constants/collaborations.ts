@@ -1,6 +1,16 @@
 const collaborations = [
   {
     id: 1,
+    img: "/Collaborations/Becas.webp",
+    title: "Becas",
+    overview:
+      "As part ot this project, I was responsible for creating the new scholaship consultation experience, both at the high school and professional levels, at the Tecnológico de Monterrey. The projects impacted included: Talento Emprendedor, Prepa Talento Estudiantil, Talento Transformador, Talento Académico, Talento Creativo, Talento Estudiantil, and Talento Steam. The technologies used to develop this experience were HTML, CSS, and Javascript with JQuery for the front-end, and PHP and MySQL databases for the back-end.",
+    overwiew_es:
+      "Como parte de este proyecto, fui responsable de crear la nueva experiencia de consulta de becas, tanto a nivel preparatoria como profesional, en el Tecnológico de Monterrey. Los proyectos impactados incluyeron: Talento Emprendedor, Talento Estudiantil de Secundaria, Talento Transformador, Talento Académico, Talento Creativo, Talento Estudiantil y Talento Steam. Las tecnologías utilizadas para desarrollar esta experiencia fueron HTML, CSS y Javascript con JQuery para el front end y PHP con bases de datos MySQL para el back end.",
+    link: "https://admision.tec.mx/talentoemprendedor/",
+  },
+  {
+    id: 2,
     img: "/Collaborations/Whistleblowwer.webp",
     title: "Whistleblowwer",
     overview:
@@ -10,7 +20,7 @@ const collaborations = [
     link: "https://whistleblowwer.com",
   },
   {
-    id: 2,
+    id: 3,
     img: "/Collaborations/ACED.webp",
     title: "ACED",
     overview:
@@ -20,7 +30,7 @@ const collaborations = [
     link: "https://tec.mx/es",
   },
   {
-    id: 3,
+    id: 4,
     img: "/Collaborations/Diplomatec.webp",
     title: "Diplomatec",
     overview:
@@ -30,7 +40,7 @@ const collaborations = [
     link: "https://diploma.tec.mx",
   },
   {
-    id: 4,
+    id: 5,
     img: "/Collaborations/CostoDeVida.webp",
     title: "Costo de Vida",
     overview:
@@ -40,7 +50,7 @@ const collaborations = [
     link: "https://admision.tec.mx/costo-de-vida/",
   },
   {
-    id: 5,
+    id: 6,
     img: "/Collaborations/GestorDeEventos.webp",
     title: "Gestor de Eventos",
     overview:
@@ -50,7 +60,7 @@ const collaborations = [
     link: "https://calendario.tec.mx",
   },
   {
-    id: 6,
+    id: 7,
     img: "/Collaborations/TecAllAccess.webp",
     title: "Tec All Access",
     overview:
@@ -60,7 +70,7 @@ const collaborations = [
     link: "https://admision.tec.mx/tecallaccess/",
   },
   {
-    id: 7,
+    id: 8,
     img: "/Collaborations/CartaDeUso.webp",
     title: "Carta de Uso",
     overview:
@@ -70,7 +80,7 @@ const collaborations = [
     link: "https://admision.tec.mx/autorizacion-uso-imagen/",
   },
   {
-    id: 8,
+    id: 9,
     img: "/Collaborations/CopaDeHielo.webp",
     title: "Copa de Hielo",
     overview:
