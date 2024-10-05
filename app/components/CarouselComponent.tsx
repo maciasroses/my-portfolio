@@ -76,9 +76,9 @@ const CarouselComponent = () => {
           </IconButton>
         )}
       >
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <div
-            key={project.id}
+            key={index}
             className="relative w-full h-full flex justify-center items-center"
             onMouseEnter={() => setIsTextVisible(true)}
             onMouseLeave={() => setIsTextVisible(false)}

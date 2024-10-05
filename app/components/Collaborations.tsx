@@ -12,9 +12,9 @@ const Collaborations = () => {
         {t("title")}
       </h1>
       <div className="grid gap-y-8 sm:gap-6 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-10 mt-5">
-        {collaborations.map((collaboration) => (
+        {collaborations.map((collaboration, index) => (
           <Link
-            key={collaboration.id}
+            key={index}
             href={collaboration.link}
             target="_blank"
             className="h-fit"

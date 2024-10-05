@@ -1,6 +1,97 @@
 const projects = [
   {
-    id: 1,
+    title: "Peques",
+    img: "/PequesProject/peques-1.webp",
+    popUpImg: "/PequesProject/peques-1.webp",
+    imgSupport1: "/PequesProject/peques-2.webp",
+    imgSupport2: "/PequesProject/peques-3.webp",
+    imgSupport3: "/PequesProject/peques-4.webp",
+    description:
+      "A private system to manage providers, inventory, orders, and sales of a children's store.",
+    description_es:
+      "Sistema privado para gestionar los proveedores, inventario, órdenes y ventas de una tienda infantil.",
+    summary:
+      "The project stands out for its design and custom features, offering multiple functionalities to manage, add, and manipulate all data, being secure due to its authentication and authorization system.",
+    summary_es:
+      "El proyecto se distingue dado su diseño y características a la medida, ofreciendo además multiples funcionalidades para gestionar, agregar y manipular todos los datos, estando seguro dada su sistema de autenticación y autorización.",
+    context:
+      "This project was developed with the aim of facilitating internal store management, seeking digital improvement by migrating from a manual system to an automated one with cutting-edge technologies, as well as having a design according to its colors and style.",
+    context_es:
+      "Este proyecto se desarrolló con el objetivo de facilitar la gestión interna de la tienda, buscando la mejora digital de migrar de un sistema manual a uno automatizado con tecnologías de vanguardia, además de contar con un diseño acorder a sus colores y estilo.",
+    planning:
+      "From the need, the development was proposed for a more optimal and automated management of the information, guaranteeing a history of it and total manipulation by authorized persons for it.",
+    planning_es:
+      "A partir de la necesidad, se planteó el desarrollo para una gestión más óptima y automatizada de la información, garantizando un historico de la misma y la manipulación total por parte de personas autorizadas para ello.",
+    technologies:
+      "With an XP-type methodology, the development was carried out quickly but organized, using technologies such as React with NextJS and TailwindCSS for the front-end, following a monolithic strategy with Prisma for the back-end part using the PostgreSQL system from Vercel.",
+    technologies_es:
+      "Con una metodología tipo XP, el desarrolló se dio de forma rápida pero organizada, utilizando tecnologías como React con NextJS y TailwindCSS para el front-end, siguiendo una estrategia de monolito con Prisma para la parte del back-end usando el sistema de PostgreSQL de Vercel.",
+    features: [
+      "User-friendly and attractive interface.",
+      "Authentication and authorization system for data security.",
+      "Efficient management of providers, inventory, orders, and sales.",
+      "History of the operations performed in the system.",
+      "Free selection of the application theme.",
+    ],
+    features_es: [
+      "Interfaz de usuario amigable y atractiva.",
+      "Sistema de autenticación y autorización para la seguridad de los datos.",
+      "Gestión de proveedores, inventario, órdenes y ventas de forma eficiente.",
+      "Historial de las operaciones realizadas en el sistema.",
+      "Selección libre del tema de la aplicación.",
+    ],
+    results:
+      "The project guarantees total control of the data, as well as monitoring sales and, therefore, visualization of the numbers year by year.",
+    results_es:
+      "El proyecto garantiza un control total de los datos, además de monitorear las ventas y, por lo tanto, visualización de los números año con año.",
+    link: "https://peques-eight.vercel.app",
+  },
+  {
+    title: "Digital Hub - Reto de Promociones",
+    img: "/DigitalHubProject/dighub-1.webp",
+    popUpImg: "/DigitalHubProject/dighub-1.webp",
+    imgSupport1: "/DigitalHubProject/dighub-2.webp",
+    imgSupport2: "/DigitalHubProject/dighub-3.webp",
+    imgSupport3: "/DigitalHubProject/dighub-4.webp",
+    description:
+      "A project developed in less than 24 hours focused on the area of promotions, including artificial intelligence",
+    description_es:
+      "Reto desarrollado en menos de 24 horas enfocado en el área de promociones, incluyendo además inteligencia artificial",
+    summary:
+      "This project was part of an event organized by Digital Hub and sponsored by Arca Continental, being a 24-hour Hackathon in which the challenge of promotions was posed, thus seeking to offer a better platform for its management and implement new technologies such as artificial intelligence.",
+    summary_es:
+      "Este proyecto fue parte de un evento organizado por Digital Hub y patrocinado por Arca Continental, siendo un Hackaton de 24 horas en el que se planteó el reto de promociones, buscando así ofrecener una mejor pataforma para su gestión e implementar nuevas tecnologías como inteligencia artificial.",
+    context:
+      "This project was born out of the need to improve the way promotions available to their suppliers are displayed, considering the type of users they currently interact with, as well as wanting to offer a more personalized and attractive experience.",
+    context_es:
+      "Este proyecto nace de la necesidad de mejorar la forma de mostrar las promociones disponibles a sus proveedores, considerando el tipo de usuarios con los que interactuan actualmente, además de querer ofrecer una experiencia más personalizada y atractiva.",
+    planning:
+      "The project was divided into two parts, the first focused on capturing the requirements and needs, and the second on planning and implementing the solution, considering the integration of artificial intelligence to improve the user experience.",
+    planning_es:
+      "El proyecto se dividió en dos partes, la primera enfocada en la captura de los requerimientos y necesidades, y la segunda en la planeación e implementación de la solución, considerando la integración de inteligencia artificial para mejorar la experiencia del usuario.",
+    technologies:
+      "For the development of this project, an XP-type methodology was used, where delivery time and product quality were vital, as well as the integration of technologies such as React with NextJS and TailwdindCSS for the front-end, following a monolithic strategy with Prisma for the queries and mutations of the application data itself, while also using Python with Flask for the back-end in terms of consuming the OpenAI API for artificial intelligence.",
+    technologies_es:
+      "Para el desarrollo de este proyecto se utilizó una metodología tipo XP, donde era vital el tiempo de entrega y la calidad del producto, además de la integración de tecnologías como React con NextJS y TailwdindCSS para el front-end, siguiendo además una estrategia de monolito con Prisma para las consultas y mutaciones de datos de la aplicación en sí, mientras que también se utilizó Python con Flask para el back-end en cuanto al consumo de la API de OpenAI para la inteligencia artificial.",
+    features: [
+      "User-friendly and attractive interface.",
+      "Integration of artificial intelligence to improve the user experience.",
+      "Promotion management more efficiently and personalized.",
+      "Explanation of promotions in a clearer and more detailed way through artificial intelligence.",
+    ],
+    features_es: [
+      "Interfaz de usuario amigable y atractiva.",
+      "Integración de inteligencia artificial para mejorar la experiencia del usuario.",
+      "Gestión de promociones de forma más eficiente y personalizada.",
+      "Explicación de promociones de forma más clara y detallada por medio de la inteligencia artificial.",
+    ],
+    results:
+      "The project was presented to the company's executives to suggest it as the new solution, obtaining feedback and good comments.",
+    results_es:
+      "El proyecto fue presentado a los directivos de la empresa para sugerirlo como la nueva solución, obteniendo retroalimentación y buenos comentarios.",
+    link: "https://github.com/maciasroses/Digital-Hub---Promociones",
+  },
+  {
     title: "Community Lab Alliance",
     img: "/CommunityLabAllianceProject/cla.webp",
     popUpImg: "/CommunityLabAllianceProject/cla-1.webp",
@@ -48,7 +139,6 @@ const projects = [
     link: "https://www.communitylab.com.mx/",
   },
   {
-    id: 2,
     title: "JLArchitecture",
     img: "/JLArchitectureProject/jlarchitecture-header.webp",
     popUpImg: "/JLArchitectureProject/jlarchitecture-1.webp",
@@ -102,7 +192,6 @@ const projects = [
     link: "https://jlarqstudio.com",
   },
   {
-    id: 3,
     title: "AcompañaT",
     img: "/AcompaniaTProject/acompaniat.webp",
     popUpImg: "/AcompaniaTProject/acompaniat-1.webp",
@@ -154,7 +243,6 @@ const projects = [
     link: "https://acompaniat.com",
   },
   {
-    id: 4,
     title: "Smartspeak",
     img: "/SmartspeakProject/smartspeak.webp",
     popUpImg: "/SmartspeakProject/smartspeak-1.webp",

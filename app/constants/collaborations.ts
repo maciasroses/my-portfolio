@@ -1,6 +1,14 @@
 const collaborations = [
   {
-    id: 1,
+    img: "/Collaborations/CargoClaroContabilidad.webp",
+    title: "Cargo Claro - Sección de Contabilidad",
+    overview:
+      "In this project, I was responsible for the development of the accounting section of the Cargo Claro platform. The technologies used in this project were NextJS and TailwindCSS with some additional libraries such as tantstack, chartjs, and radixUI for the front-end, and Prisma with PostgreSQL in the Supabase service with some additional libraries for querying such as trpc, and axios for the back-end.",
+    overwiew_es:
+      "En este proyecto, fui responsable del desarrollo de la sección de contabilidad de la plataforma Cargo Claro. Las tecnologías utilizadas en este proyecto fueron NextJS y TailwindCSS con algunas bibliotecas adicionales como tantstack, chartjs y radixUI para el front-end, y Prisma con PostgreSQL en el servicio Supabase con algunas bibliotecas adicionales para consultas como trpc y axios para el back-end.",
+    link: "https://www.cargoclaro.com",
+  },
+  {
     img: "/Collaborations/Becas.webp",
     title: "Becas",
     overview:
@@ -10,7 +18,6 @@ const collaborations = [
     link: "https://admision.tec.mx/talentoemprendedor/",
   },
   {
-    id: 2,
     img: "/Collaborations/Whistleblowwer.webp",
     title: "Whistleblowwer",
     overview:
@@ -20,7 +27,6 @@ const collaborations = [
     link: "https://whistleblowwer.com",
   },
   {
-    id: 3,
     img: "/Collaborations/ACED.webp",
     title: "ACED",
     overview:
@@ -30,7 +36,6 @@ const collaborations = [
     link: "https://tec.mx/es",
   },
   {
-    id: 4,
     img: "/Collaborations/Diplomatec.webp",
     title: "Diplomatec",
     overview:
@@ -40,7 +45,6 @@ const collaborations = [
     link: "https://diploma.tec.mx",
   },
   {
-    id: 5,
     img: "/Collaborations/CostoDeVida.webp",
     title: "Costo de Vida",
     overview:
@@ -50,7 +54,6 @@ const collaborations = [
     link: "https://admision.tec.mx/costo-de-vida/",
   },
   {
-    id: 6,
     img: "/Collaborations/GestorDeEventos.webp",
     title: "Gestor de Eventos",
     overview:
@@ -60,7 +63,6 @@ const collaborations = [
     link: "https://calendario.tec.mx",
   },
   {
-    id: 7,
     img: "/Collaborations/TecAllAccess.webp",
     title: "Tec All Access",
     overview:
@@ -70,7 +72,6 @@ const collaborations = [
     link: "https://admision.tec.mx/tecallaccess/",
   },
   {
-    id: 8,
     img: "/Collaborations/CartaDeUso.webp",
     title: "Carta de Uso",
     overview:
@@ -80,7 +81,6 @@ const collaborations = [
     link: "https://admision.tec.mx/autorizacion-uso-imagen/",
   },
   {
-    id: 9,
     img: "/Collaborations/CopaDeHielo.webp",
     title: "Copa de Hielo",
     overview:
