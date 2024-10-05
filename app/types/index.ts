@@ -1,5 +1,4 @@
 interface IProjectProps {
-  id: number;
   title: string;
   img: string;
   popUpImg: string;
