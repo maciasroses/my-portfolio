@@ -1,50 +1,99 @@
 const projects = [
   {
+    title: "Banco de Tierras",
+    img: "/BancoDeTierrasProject/bdt.webp",
+    popUpImg: "/BancoDeTierrasProject/bdt-1.webp",
+    imgSupport1: "/BancoDeTierrasProject/bdt-2.webp",
+    imgSupport2: "/BancoDeTierrasProject/bdt-3.webp",
+    imgSupport3: "/BancoDeTierrasProject/bdt-4.webp",
+    description:
+      "Private administrative panel for managing rents, properties, and projects, mainly focused on creating, editing, and deleting records, as well as managing multimedia files such as plans, contracts, and documents.",
+    description_es:
+      "Panel administrativo privado para la gestión de rentas, propiedades y proyectos, principalmente, enfocado en la creación, edición y eliminación de registros, además de la gestión de archivos multimedia como planos, contratos y documentos.",
+    summary:
+      "The focus of this development was to find the optimal way to manage everything related to real estate, ensuring useful functionalities and characteristics for the permitted users, in addition to offering an audit system for the users involved.",
+    summary_es:
+      "El enfoque de este desarrollo fue buscar la manera óptima de gestionar todo lo relacionado con la inmobiliaria, garantizando funcionalidades y características útiles para los usuarios permitidos, además de ofrecer un sistema de auditoría por los usuarios involucrados.",
+    context:
+      "The project was born from the need to have a more centralized and digitalized system outside of different Excel documents with repeated and poorly organized information, in addition to the need to have a more secure and private system for managing sensitive information.",
+    context_es:
+      "El proyecto comenzó por la necesidad de tener un sistema más centralizado y digitalizado fuera de diferentes documentos de Excel con información repetida y mal organizada, además de la necesidad de tener un sistema más seguro y privado para la gestión de información sensible.",
+    planning:
+      "The solution was divided into the creation of a database according to all the Excel sheets with the data; then, the intermediate application; and finally, the creation of the web application for visualization and data processing.",
+    planning_es:
+      "La solución se dividió en la creación de una base de datos de acuerdo a todas las hojas de excel con los datos; después, la aplicación intermedia; y por último, la creación de la aplicación web para la visualización y tratado de los datos.",
+    technologies:
+      "For the development of this project, an agile methodology was used, where constant deliveries were made and work was done in sprints. The technologies used were: React with NextJS and TailwindCSS for the front-end, Python with FastAPI for the back-end, as well as Azure PostgreSQL for the database and Azure Blob for multimedia file storage.",
+    technologies_es:
+      "Para el desarrollo de este proyecto se utilizó una metodología ágil, donde se realizaron entregas constantes y se trabajó en sprints. Las tecnologías utilizadas fueron: React con NextJS y TailwindCSS para el front-end, Python con FastAPI para el back-end, además de Azure PostgreSQL para la base de datos y Azure Blob para el almacenamiento de archivos multimedia.",
+    features: [
+      "Private administrative panel for managing rents, properties, and projects.",
+      "User-friendly and attractive interface.",
+      "Cloud-stored files.",
+      "Authentication and authorization system for secure access.",
+      "Audit system for tracking changes.",
+      "Multimedia file management system.",
+    ],
+    features_es: [
+      "Panel administrativo privado para la gestión de rentas, propiedades y proyectos.",
+      "Interfaz de usuario amigable y atractiva.",
+      "Archivos almacenados en la nube.",
+      "Sistema de autenticación y autorización para acceso seguro.",
+      "Sistema de auditoría para el seguimiento de cambios.",
+      "Sistema de gestión de archivos multimedia.",
+    ],
+    results:
+      "The project was completed at the stage of managing the main panels with their different multimedia files. The system is currently in use, and the client has expressed satisfaction with the results.",
+    results_es:
+      "El proyecto se concluyó en la etapa de la gestión de los páneles principales con sus diferentes archivos multimedia.",
+    link: "https://banco-de-tierras.vercel.app",
+  },
+  {
     title: "Peques",
-    img: "/PequesProject/peques-1.webp",
+    img: "/PequesProject/peques.webp",
     popUpImg: "/PequesProject/peques-1.webp",
     imgSupport1: "/PequesProject/peques-2.webp",
     imgSupport2: "/PequesProject/peques-3.webp",
     imgSupport3: "/PequesProject/peques-4.webp",
     description:
-      "A private system to manage providers, inventory, orders, and sales of a children's store.",
+      "A tailored eCommerce and management platform developed to handle providers, inventory, orders, and sales, later evolving from a private internal system to a complete online store.",
     description_es:
-      "Sistema privado para gestionar los proveedores, inventario, órdenes y ventas de una tienda infantil.",
+      "Plataforma de administración y eCommerce a la medida, desarrollada inicialmente como un sistema privado para gestionar proveedores, inventario, órdenes y ventas, evolucionando luego a una tienda en línea completa.",
     summary:
-      "The project stands out for its design and custom features, offering multiple functionalities to manage, add, and manipulate all data, being secure due to its authentication and authorization system.",
+      "The project started as a secure internal data platform and evolved into a full-featured eCommerce system. It replaced manual Excel records, reduced admin workload by 60%, and sped up checkout by 40%. It offers full data control, advanced management tools, and a modern, secure user experience.",
     summary_es:
-      "El proyecto se distingue dado su diseño y características a la medida, ofreciendo además multiples funcionalidades para gestionar, agregar y manipular todos los datos, estando seguro dada su sistema de autenticación y autorización.",
+      "El proyecto inició como una plataforma segura de gestión interna y evolucionó a un sistema eCommerce completo. Reemplazó registros manuales en Excel, redujo el trabajo administrativo en un 60% y aceleró el proceso de compra en un 40%. Ofrece control total de los datos, herramientas avanzadas de gestión y una experiencia de usuario moderna y segura.",
     context:
-      "This project was developed with the aim of facilitating internal store management, seeking digital improvement by migrating from a manual system to an automated one with cutting-edge technologies, as well as having a design according to its colors and style.",
+      "Originally built to modernize store operations and replace manual workflows, the project now supports scalable online commerce with custom design aligned to brand colors and style.",
     context_es:
-      "Este proyecto se desarrolló con el objetivo de facilitar la gestión interna de la tienda, buscando la mejora digital de migrar de un sistema manual a uno automatizado con tecnologías de vanguardia, además de contar con un diseño acorder a sus colores y estilo.",
+      "Originalmente creado para modernizar las operaciones de la tienda y reemplazar flujos de trabajo manuales, el proyecto ahora soporta comercio electrónico escalable con un diseño personalizado acorde a los colores y estilo de la marca.",
     planning:
-      "From the need, the development was proposed for a more optimal and automated management of the information, guaranteeing a history of it and total manipulation by authorized persons for it.",
+      "Development began to streamline internal processes and later expanded to include a tailored eCommerce component, ensuring full control and automation of purchases and sales.",
     planning_es:
-      "A partir de la necesidad, se planteó el desarrollo para una gestión más óptima y automatizada de la información, garantizando un historico de la misma y la manipulación total por parte de personas autorizadas para ello.",
+      "El desarrollo comenzó para optimizar los procesos internos y luego se expandió para incluir un componente eCommerce a la medida, asegurando el control total y la automatización de compras y ventas.",
     technologies:
-      "With an XP-type methodology, the development was carried out quickly but organized, using technologies such as React with NextJS and TailwindCSS for the front-end, following a monolithic strategy with Prisma for the back-end part using the PostgreSQL system from Vercel.",
+      "Using an XP-inspired methodology, the platform was built quickly yet methodically. Front-end was developed with React, NextJS, and TailwindCSS; back-end with Prisma and PostgreSQL, all hosted via Vercel’s infrastructure.",
     technologies_es:
-      "Con una metodología tipo XP, el desarrolló se dio de forma rápida pero organizada, utilizando tecnologías como React con NextJS y TailwindCSS para el front-end, siguiendo una estrategia de monolito con Prisma para la parte del back-end usando el sistema de PostgreSQL de Vercel.",
+      "Usando una metodología inspirada en XP, la plataforma fue construida de manera rápida pero metódica. El front-end se desarrolló con React, NextJS y TailwindCSS; el back-end con Prisma y PostgreSQL, todo alojado en la infraestructura de Vercel.",
     features: [
+      "Custom eCommerce experience with complete inventory control.",
       "User-friendly and attractive interface.",
-      "Authentication and authorization system for data security.",
-      "Efficient management of providers, inventory, orders, and sales.",
-      "History of the operations performed in the system.",
-      "Free selection of the application theme.",
+      "Authentication and authorization system for secure access.",
+      "Operation history and real-time sales monitoring.",
+      "Automated purchase system and theme selection options.",
     ],
     features_es: [
+      "Experiencia eCommerce a la medida con control total de inventario.",
       "Interfaz de usuario amigable y atractiva.",
-      "Sistema de autenticación y autorización para la seguridad de los datos.",
-      "Gestión de proveedores, inventario, órdenes y ventas de forma eficiente.",
-      "Historial de las operaciones realizadas en el sistema.",
-      "Selección libre del tema de la aplicación.",
+      "Sistema de autenticación y autorización para acceso seguro.",
+      "Historial de operaciones y monitoreo de ventas en tiempo real.",
+      "Sistema de compras automatizado y opciones de selección de tema.",
     ],
     results:
-      "The project guarantees total control of the data, as well as monitoring sales and, therefore, visualization of the numbers year by year.",
+      "The platform now supports complete online transactions while maintaining strong internal management tools. Sales control and checkout speed significantly improved, making the system scalable and efficient.",
     results_es:
-      "El proyecto garantiza un control total de los datos, además de monitorear las ventas y, por lo tanto, visualización de los números año con año.",
-    link: "https://peques-eight.vercel.app",
+      "La plataforma ahora permite transacciones en línea completas, manteniendo herramientas sólidas de gestión interna. El control de ventas y la velocidad del proceso de compra mejoraron significativamente, haciendo el sistema escalable y eficiente.",
+    link: "https://shopeques.com",
   },
   {
     title: "Digital Hub - Reto de Promociones",
