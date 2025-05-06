@@ -1,5 +1,14 @@
 const collaborations = [
   {
+    img: "/Collaborations/CargoClaroAI.webp",
+    title: "Cargo Claro - Glosa Aduanal con IA",
+    overview:
+      "Pioneer in the creation of the project, mainly developing the front-end with NextJS and TailwindCSS, integrating useful libraries such as Shadcn UI and Prisma, implementing a custom Auth and direct communication with the API developed with LLMs for processing data extracted from the requested documents. The application is simple and intuitive with a panel that summarizes the glosses made over time, being able to mark each section as verified; also being able to show the alerts found by the agent, the time and money saved.",
+    overview_es:
+      "Pionero en la creación del proyecto, desarrollando principalmente el front-end con NextJS y TailwindCSS, integrando librerías útiles como Shadcn UI y Prisma, implementando un Auth propio y comunicación directa con la API desarrollada con LLMs para el procesamiento de los datos extraídos por los documentos solicitados. La aplicación es sencilla e intuitiva con un panel donde resume las glosas realizadas con el tiempo, pudiendo marcar cada sección como verificada; pudiendo mostrar además las alertas encontradas por el agente, el tiempo y dinero ahorrado.",
+    link: "https://www.cargoclaro.com",
+  },
+  {
     img: "/Collaborations/CargoClaroContabilidad.webp",
     title: "Cargo Claro - Sección de Contabilidad",
     overview:
