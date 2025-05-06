@@ -36,7 +36,7 @@ const Collaborations = () => {
                 <p className="h-[95px] overflow-y-auto">
                   {t("lan") === "en"
                     ? collaboration.overview
-                    : collaboration.overwiew_es}
+                    : collaboration.overview_es}
                 </p>
               </div>
             </article>
