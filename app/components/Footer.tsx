@@ -11,7 +11,7 @@ const Footer = () => {
         <Logo />
         <div className="flex flex-col md:flex-row items-end gap-1 text-base xl:text-xl">
           <p className="flex flex-col sm:flex-row items-end gap-1">
-            © 2023 - {new Date().getFullYear()}
+            © 2018 - {new Date().getFullYear()}
             <span className="md:block hidden">
               Jorge Humberto Macías Romero.
             </span>
